@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <title>Portofolio</title>
+    </head>
+    
+    <body>
+
+        <div class="wrapper">
+            <!--Top Menu-->
+            <div class="sidebar">
+                <!--Name, logo/profile image, title-->
+                <div class="profile">
+                    <img src="{% static 'logo.jpg' %}">
+                    <h3>Kevin Goldra Hermanto</h3>
+                    <p>Software Engineer</p>
+                </div>
+                    <!--menu item-->
+                    <ul>
+                        <!--about me list-->
+                        <li>
+                            <a href="#" class="active">
+                                <span class="item">About Me</span>
+                            </a>
+                        </li>
+
+                        <!--skills-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Skills</span>
+                            </a>
+
+                        </li>
+
+                        <!--certifications-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Certifications</span>
+                            </a>
+
+                        </li>
+
+                        <!--experience-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Experience</span>
+                            </a>
+
+                        </li>
+
+                        <!--training-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Training</span>
+                            </a>
+                        </li>
+
+                        <!--projects-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Projects</span>
+                            </a>
+                        </li>
+
+                        <!--contact-->
+                        <li>
+                            <a href="#">
+                                <span class="item">Contact</span>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+
+        {% block content %}
+
+        {% endblock content %}
+    </body>
+    
+    <footer>
+
+    </footer>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    background-image: url("background_img.png");
+    background-size: cover;
+}
+
+
+.wrapper, .sidebar{
+    background: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.wrapper, .sidebar, .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 35% 0;
+}
+.profile h3{
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.profile p{
+    color:white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
