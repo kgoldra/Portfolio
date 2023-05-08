@@ -2,77 +2,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <!--css file-->
         <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+        <!--boxicon icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <meta charset="UTF-8">
         <title>Portofolio</title>
     </head>
     
     <body>
 
-        <div class="wrapper">
-            <!--Top Menu-->
-            <div class="sidebar">
-                <!--Name, logo/profile image, title-->
-                <div class="profile">
-                    <img src="{% static 'logo.jpg' %}">
-                    <h3>Kevin Goldra Hermanto</h3>
-                    <p>Software Engineer</p>
-                </div>
-                    <!--menu item-->
-                    <ul>
-                        <!--about me list-->
-                        <li>
-                            <a href="#" class="active">
-                                <span class="item">About Me</span>
-                            </a>
-                        </li>
-
-                        <!--skills-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Skills</span>
-                            </a>
-
-                        </li>
-
-                        <!--certifications-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Certifications</span>
-                            </a>
-
-                        </li>
-
-                        <!--experience-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Experience</span>
-                            </a>
-
-                        </li>
-
-                        <!--training-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Training</span>
-                            </a>
-                        </li>
-
-                        <!--projects-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Projects</span>
-                            </a>
-                        </li>
-
-                        <!--contact-->
-                        <li>
-                            <a href="#">
-                                <span class="item">Contact</span>
-                        </li>
-                    </ul>
+        <nav>
+            <div class="logo">
+                <i class='bx bx-menu menu-icon'></i>
+                <span class="logo-name">Portfolio</span>
             </div>
-        </div>
+
+            <!--Sidebar-->
+            <div class="sidebar">
+                <hr>
+
+                <!--Sidebar Content-->
+                <div class="sidebar-content">
+                    <ul class="lists">
+                        <li class="list">
+                            <a href="#" class="nav-link-1">
+                                <i class='bx bxs-info-circle icon' ></i>
+                                <span class="link">About Me</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-terminal icon'></i>
+                                <span class="link">Skills</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-certification icon'></i>
+                                <span class="link">Certifications</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-briefcase icon' ></i>
+                                <span class="link">Experience</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-chalkboard icon' ></i>
+                                <span class="link">Training</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxl-github icon' ></i>
+                                <span class="link">Projects</span>
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-envelope icon'></i>
+                                <span class="link">Contact</span>
+                            </a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
 
 
         {% block content %}
